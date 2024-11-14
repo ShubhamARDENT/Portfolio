@@ -218,9 +218,17 @@ li {
   margin-right: 5px;
 }
 
+.square {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #6dbfb8;
+}
+
 .nav_heading {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav_heading h1 {
@@ -242,11 +250,12 @@ li {
 }
 
 /* list home item */
-.nav-item-home {
+.nav-item-home:hover {
   position: relative;
   padding: 35px 5%;
   background-color: #17a3d8;
   color: white; /* Adjust spacing as needed */
+  cursor: pointer;
 }
 
 /* Adding lines to the left  */
@@ -273,23 +282,10 @@ li {
   border-bottom: 8px solid#1181ba; /* Triangle color */
 }
 
-/* blog item */
-
-.nav-item-blog {
-  background-color: #f5945c;
-  padding: 5px 10px;
-}
-
 nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.square {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #6dbfb8;
+  padding: 20px 5%;
 }
