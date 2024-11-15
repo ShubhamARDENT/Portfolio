@@ -224,7 +224,8 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 150px 1% 308px;
+  padding: 150px 1% 285px;
+  position: relative;
 }
 
 .banner .wrapper {
@@ -251,6 +252,12 @@ li {
   color: white;
   font-weight: 600;
   font-size: 2rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.details {
+  color: #1697ca;
 }
 
 .nav_heading {
@@ -341,3 +348,109 @@ header .wrapper {
   max-width: 100%;
   width: 75%;
 }
+
+.service-heading {
+  padding: 10px 1.5%;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background-color: #1697ca;
+  font-weight: 600;
+  color: white;
+}
+
+.services .wrapper {
+  max-width: 100%;
+  width: 77%;
+  padding: 100px 0%;
+}
+
+.portfolio {
+  background-color: #2e3e4e;
+}
+
+.service-description {
+  text-align: center;
+}
+
+.service-description p {
+  font-size: 0.9rem;
+  margin-top: 12px;
+  padding: 0 20%;
+}
+
+.service-description h2 {
+  margin-top: 90px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.our-services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* service icons */
+.service-description .desktop::before {
+  content: "\f390";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.desktop span {
+  display: none;
+}
+
+.service-description .search::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.search span {
+  display: none;
+}
+
+.service-description .cart::before {
+  content: "\f07a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.cart span {
+  display: none;
+}
+
+.service-description .like::before {
+  content: "\f164";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.like span {
+  display: none;
+}
+
+/* service icon end */
