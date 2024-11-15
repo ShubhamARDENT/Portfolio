@@ -6,120 +6,451 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-	 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-	 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-	 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-	 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-	 tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-	 figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-	 time, mark, audio, video {
-		 margin: 0;
-		 padding: 0;
-		 border: 0;
-		 font-size: 100%;
-		 font: inherit;
-		 vertical-align: baseline;
-	 }
-	 
-	 /* HTML5 display-role reset for older browsers */
-	 article, aside, details, figcaption, figure,
-	 footer, header, hgroup, menu, nav, section {
-		 display: block;
-	 }
-	 
-	 /* Force scrollbar */
-	 html {
-		 overflow-y: scroll;
-	 }
-	 
-	 /* Align radios and text inputs with their label */
-	 input[type=radio] {
-		 vertical-align: text-bottom;
-	 }
-	 
-	 /* Hand cursor on clickable input elements */
-	 label,
-	 input[type=button],
-	 input[type=submit],
-	 button {
-		 cursor: pointer;
-	 }
-	 
-	 strong {
-		 font-weight: bold;
-		 font-family: inherit;
-		 font-size: inherit;
-	 }
-	 
-	 em {
-		 font-style: italic;
-	 }
-	 
-	 img {
-		 width: 100%;
-		 border: 0;
-		 vertical-align: middle;
-	 }
-	 
-	 sub,
-	 sup {
-		 vertical-align: baseline;
-		 position: relative;
-		 font-size: 55%;
-		 line-height: 0;
-	 }
-	 
-	 sup {
-		 top: -0.7em;
-	 }
-	 
-	 sub {
-		 bottom: -0.25em;
-	 }
-	 
-	 /* 1.2. Clear Fix
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
 			========================== */
-	 .cf:before,
-	 .cf:after {
-		 display: table;
-		 content: " ";
-	 }
-	 
-	 .cf:after {
-		 clear: both;
-	 }
-	 
-	 .cf {
-		 zoom: 1;
-	 }
-	 
-	 /* for all */
-	 body {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 font-family: sans-serif;
-	 }
-	 
-	 a {
-		 display: inline-block;
-		 text-decoration: none;
-	 }
-	 
-	 li {
-		 display: inline-block;
-		 list-style-type: none;
-	 }
-	 
-	 /* for wrapper */
-	 .wrapper {
-		 max-width: 1360px;
-		 width: 60.1%;
-		 margin: 0 auto;
-	 }
-	 
-	 * {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 padding: 0;
-		 margin: 0;
-	 }
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* for all */
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+  max-width: 1360px;
+  width: 60.1%;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* DESKTOP VERSION STARTS */
+
+.circle {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #f5945c;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.banner {
+  background-image: url("https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 150px 1% 285px;
+  position: relative;
+}
+
+.banner .wrapper {
+  color: grey;
+  text-align: center;
+}
+
+.banner .wrapper h2 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 5px;
+}
+
+.banner .wrapper p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 57px;
+}
+
+.banner_btn {
+  padding: 17px 10%;
+  background-color: #f5945c;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.details {
+  color: #1697ca;
+}
+
+.nav_heading {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 3.5%;
+}
+
+.nav_heading h1 {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+}
+
+.nav_list li {
+  margin-left: 75px;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  line-height: 2.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav_list li:hover {
+  margin-left: 75px;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #17a3d8;
+  padding: 40px 4%;
+  border-bottom: 10px solid #1697ca;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.nav_list li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the triangle */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent; /* Left side of the triangle */
+  border-right: 8px solid transparent; /* Right side of the triangle */
+  border-bottom: 8px solid #1697ca; /* Triangle color */
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+}
+
+.square {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #6dbfb8;
+}
+
+.search {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.search .search-icon::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+  background-color: #f5945c;
+  padding: 12px;
+  border-radius: 50%;
+  color: white;
+}
+
+header .wrapper {
+  max-width: 100%;
+  width: 75%;
+}
+
+.service-heading {
+  padding: 10px 1.5%;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background-color: #1697ca;
+  font-weight: 600;
+  color: white;
+}
+
+.services .wrapper {
+  max-width: 100%;
+  width: 77%;
+  padding: 100px 0%;
+}
+
+.portfolio {
+  background-color: #2e3e4e;
+}
+
+.service-description {
+  text-align: center;
+}
+
+.service-description p {
+  font-size: 0.9rem;
+  margin-top: 12px;
+  padding: 0 20%;
+}
+
+.service-description h2 {
+  margin-top: 90px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.our-services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* service icons */
+.service-description .desktop::before {
+  content: "\f390";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.desktop span {
+  display: none;
+}
+
+.service-description .search::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.search span {
+  display: none;
+}
+
+.service-description .cart::before {
+  content: "\f07a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.cart span {
+  display: none;
+}
+
+.service-description .like::before {
+  content: "\f164";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.like span {
+  display: none;
+}
+
+/* service icon end */
