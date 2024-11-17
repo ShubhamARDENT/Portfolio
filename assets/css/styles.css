@@ -681,7 +681,7 @@ header .wrapper {
   text-align: center;
   max-width: 100%;
   width: 77%;
-  padding: 50px 4% 50px 4%;
+  padding: 50px 4% 0px 4%;
 }
 
 
@@ -711,13 +711,56 @@ i {
   font-size: 4rem;
   background-color: grey;
   border-radius: 50%;
-  padding: 5px 10%;
+  padding: 10px 19%;
 }
 
-.testimonial_list li {
-  margin-right: 20px;
+i:hover {
+  font-weight: 900;
+  font-size: 4rem;
+  background-color: #f5945c;
+  border-radius: 50%;
+  padding: 10px 19%;
 }
 
 footer {
   background-color: #2e3e4e;
 }
+
+.testimonial_list li {
+  position: relative;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.testimonial_list li:hover::after {
+  content: "";
+  /* Add a pseudo-element for the border */
+  display: block;
+  width: 100px;
+  /* Width of the border */
+  height: 10px;
+  /* Height of the border */
+  background-color: #f5945c;
+  /* Gradient border */
+  margin-top: 60px;
+  /* Space between the icon and the border */
+}
+
+.testimonial_list li::after {
+  content: "";
+  /* Add a pseudo-element for the border */
+  display: block;
+  width: 100px;
+  /* Width of the border */
+  height: 10px;
+  /* Height of the border */
+  background-color: gray;
+  /* Gradient border */
+  margin-top: 60px;
+  /* Space between the icon and the border */
+}
+
+
+/* add triangle  */
