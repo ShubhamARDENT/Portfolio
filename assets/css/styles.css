@@ -304,13 +304,17 @@ li {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%; /* Center the triangle */
+  left: 50%;
+  /* Center the triangle */
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 8px solid transparent; /* Left side of the triangle */
-  border-right: 8px solid transparent; /* Right side of the triangle */
-  border-bottom: 8px solid #1697ca; /* Triangle color */
+  border-left: 8px solid transparent;
+  /* Left side of the triangle */
+  border-right: 8px solid transparent;
+  /* Right side of the triangle */
+  border-bottom: 8px solid #1697ca;
+  /* Triangle color */
 }
 
 nav {
@@ -357,7 +361,7 @@ header .wrapper {
   padding: 10px 1.5%;
   position: absolute;
   left: 50%;
-  bottom: 40px;
+  bottom: -20px;
   transform: translateX(-50%);
   background-color: #1697ca;
   font-weight: 600;
@@ -370,10 +374,6 @@ header .wrapper {
   padding: 95px 0%;
 }
 
-.portfolio {
-  background-color: #2e3e4e;
-  padding: 200px 0%;
-}
 
 .service-description {
   text-align: center;
@@ -394,18 +394,151 @@ header .wrapper {
 .portfolio_headings {
   display: flex;
   justify-content: space-between;
+
 }
 
-.portfolio_element {
+.portfolio_awesome {
   color: #f5945c;
   font-weight: 600;
   font-size: 2rem;
 }
 
+.more_works {
+  padding: 5px;
+  background-color: #17a3d8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+}
+
+.portfolio {
+  background-color: #2e3e4e;
+}
+
+
+.portfolio .wrapper {
+  max-width: 100%;
+  width: 77%;
+  padding: 50px 4% 50px 4%;
+}
+
 .portfolio_list {
   display: flex;
   justify-content: space-between;
+  column-gap: 35px;
+  list-style: none;
+  padding: 70px 0%;
 }
+
+.portfolio_card1 {
+  border: 13px solid white;
+  background-color: grey;
+  width: 322px;
+  height: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* portfolio icon */
+
+.camera {
+  display: block;
+}
+
+/* portfolio icon */
+.camera::before {
+  content: "\f030";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+}
+
+.camera span {
+  display: none;
+}
+
+/* details icon */
+
+.camera {
+  display: flex;
+  /* Visible by default */
+  justify-content: center;
+  align-items: center;
+}
+
+.camera::before {
+  content: "\f030";
+  /* Font Awesome Camera Icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.eye-wrapper {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.eye {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye::before {
+  content: "\f06e";
+  /* Font Awesome Eye Icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: white;
+  margin-right: 10px;
+}
+
+.details-text {
+  font-size: 1.3rem;
+  /* Adjust text size */
+  color: white;
+  font-weight: 600;
+
+}
+
+.portfolio_card1:hover .camera {
+  display: none;
+  /* Hide the camera on hover */
+}
+
+.portfolio_card1:hover .eye-wrapper {
+  display: flex;
+  /* Show the eye icon and text on hover */
+  transition: all 0.3s ease;
+  /* Smooth transition */
+}
+
+.portfolio_cap1 {
+  color: #f5945c;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.portfolio_cap2 {
+  color: white;
+  font-size: 0.9rem;
+}
+
 
 .our-services {
   display: flex;
@@ -475,3 +608,116 @@ header .wrapper {
 }
 
 /* service icon end */
+
+
+
+.whatweoffer .wrapper {
+  text-align: center;
+  max-width: 100%;
+  width: 77%;
+  padding: 50px 4% 50px 4%;
+}
+
+
+.whatweoffer_list {
+  display: flex;
+  text-align: left;
+  column-gap: 50px;
+}
+
+.whatweoffer_list p {
+  font-size: 1rem;
+}
+
+.whatweoffer_heading {
+  color: #1697ca;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.whatweoffer_heading3 {
+  padding-bottom: 40px;
+  font-weight: 400;
+}
+
+.whatweoffer_heading4 {
+  color: #1697ca;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+
+.whatweoffer_element {
+  margin-top: 5px;
+  margin-left: 140px;
+}
+
+.more_works2 {
+  padding: 5px;
+  background-color: #17a3d8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  border-bottom: 3px solid #2e3e4e;
+}
+
+.more_works3 {
+  color: #1697ca;
+}
+
+.greyline {
+  display: block;
+  width: 100%;
+
+  height: 1px;
+
+  background-color: gray;
+  color: transparent;
+}
+
+.testimonials .wrapper {
+  text-align: center;
+  max-width: 100%;
+  width: 77%;
+  padding: 50px 4% 50px 4%;
+}
+
+
+.testimonials_heading {
+  color: #1697ca;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.testimonials_element {
+  color: #2e3e4e;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.testimonials_heading4 {
+  color: #f5945c;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+i {
+  font-weight: 900;
+  font-size: 4rem;
+  background-color: grey;
+  border-radius: 50%;
+  padding: 5px 10%;
+}
+
+.testimonial_list li {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #2e3e4e;
+}
