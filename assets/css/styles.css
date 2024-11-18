@@ -984,3 +984,158 @@ footer .wrapper a:visited {
 .mobile span {
   display: none;
 }
+
+@media screen and (max-width: 1440px) {
+  .portfolio .wrapper {
+    padding: 50px 3% 50px 3.3%;
+  }
+
+  .portfolio_headings {
+    width: 100%;
+  }
+
+  .contact {
+    width: 17%;
+  }
+
+  .birdfeed {
+    width: 40%;
+  }
+
+  footer .wrapper {
+    padding: 50px 1% 50px 1%;
+  }
+}
+
+@media screen and (max-width: 1392px) {
+  .portfolio_list {
+    flex-wrap: wrap;
+  }
+
+  .portfolio_list li {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .portfolio_cap2 {
+    margin-top: 10px;
+  }
+
+  .portfolio .wrapper {
+    padding: 50px 0% 50px 0%;
+  }
+
+  .our-services {
+    flex-wrap: wrap;
+    row-gap: 70px;
+  }
+
+  .our-services li {
+    width: 50%;
+  }
+
+  .whatweoffer_list {
+    flex-wrap: wrap;
+  }
+
+  .whatweoffer_list li {
+    width: 46%;
+    margin-bottom: 25px;
+  }
+
+  .whatweoffer_element {
+    margin-left: 80%;
+  }
+
+  .testimonials_element {
+    font-size: 1rem;
+  }
+
+  footer .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .newsletter {
+    width: 47%;
+  }
+
+  .birdfeed {
+    width: 40%;
+  }
+
+  .recentprojects {
+    width: 40%;
+    margin-top: 35px;
+  }
+
+  .contact {
+    width: 47%;
+    margin-top: 35px;
+  }
+
+  .phone_element1 {
+    justify-content: unset;
+    font-size: 1rem;
+  }
+
+  .mobile_element {
+    justify-content: unset;
+    font-size: 1rem;
+  }
+
+  .email_element {
+    justify-content: unset;
+    font-size: 1rem;
+  }
+
+  .phone::before {
+    font-size: 2.5rem;
+  }
+
+  .mobile::before {
+    font-size: 2.5rem;
+  }
+
+  .message::before {
+    font-size: 2.5rem;
+  }
+
+  .phone_element2 {
+    margin-left: 20px;
+  }
+
+  .phone_element3 {
+    margin-left: 20px;
+  }
+
+  .nav_heading {
+    margin-left: 0%;
+  }
+
+  .nav_heading h1 {
+    font-size: 1rem;
+  }
+
+  .search {
+    display: flex;
+    margin-left: 35px;
+    display: none;
+  }
+
+  .search .search-icon::before {
+    margin-left: 20px;
+    display: none;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .hamburger-menu ::before {
+    content: "\f0c9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    /* display: inline-block; */
+  }
+}
