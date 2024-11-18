@@ -79,47 +79,825 @@
 	 
 	 /* 1.2. Clear Fix
 			========================== */
-	 .cf:before,
-	 .cf:after {
-		 display: table;
-		 content: " ";
-	 }
-	 
-	 .cf:after {
-		 clear: both;
-	 }
-	 
-	 .cf {
-		 zoom: 1;
-	 }
-	 
-	 /* for all */
-	 body {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 font-family: sans-serif;
-	 }
-	 
-	 a {
-		 display: inline-block;
-		 text-decoration: none;
-	 }
-	 
-	 li {
-		 display: inline-block;
-		 list-style-type: none;
-	 }
-	 
-	 /* for wrapper */
-	 .wrapper {
-		 max-width: 1360px;
-		 width: 60.1%;
-		 margin: 0 auto;
-	 }
-	 
-	 * {
-		 -webkit-box-sizing: border-box;
-		 box-sizing: border-box;
-		 padding: 0;
-		 margin: 0;
-	 }
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* for all */
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+  max-width: 1360px;
+  width: 60.1%;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* DESKTOP VERSION STARTS */
+
+.circle {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #f5945c;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.banner {
+  background-image: url("https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 150px 1% 285px;
+  position: relative;
+}
+
+.banner .wrapper {
+  color: grey;
+  text-align: center;
+}
+
+.banner .wrapper h2 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 5px;
+}
+
+.banner .wrapper p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 57px;
+}
+
+.banner_btn {
+  padding: 17px 10%;
+  background-color: #f5945c;
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.details {
+  color: #1697ca;
+}
+
+.nav_heading {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 3.5%;
+}
+
+.nav_heading h1 {
+  margin-left: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+}
+
+.nav_list li {
+  margin-left: 75px;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  line-height: 2.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav_list li:hover {
+  margin-left: 75px;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #17a3d8;
+  padding: 40px 4%;
+  border-bottom: 10px solid #1697ca;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.nav_list li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /* Center the triangle */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  /* Left side of the triangle */
+  border-right: 8px solid transparent;
+  /* Right side of the triangle */
+  border-bottom: 8px solid #1697ca;
+  /* Triangle color */
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+}
+
+.square {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #6dbfb8;
+}
+
+.search {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.search .search-icon::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 5px;
+  background-color: #f5945c;
+  padding: 12px;
+  border-radius: 50%;
+  color: white;
+}
+
+.search-icon span {
+  display: none;
+}
+
+header .wrapper {
+  max-width: 100%;
+  width: 75%;
+}
+
+.service-heading {
+  padding: 10px 1.5%;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  background-color: #1697ca;
+  font-weight: 600;
+  color: white;
+}
+
+.services .wrapper {
+  max-width: 100%;
+  width: 77%;
+  padding: 95px 0%;
+}
+
+.service-description {
+  text-align: center;
+}
+
+.service-description p {
+  font-size: 0.9rem;
+  margin-top: 12px;
+  padding: 0 20%;
+}
+
+.service-description h2 {
+  margin-top: 90px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.portfolio_headings {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 92%;
+}
+
+.portfolio_awesome {
+  color: #f5945c;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.more_works {
+  padding: 5px;
+  background-color: #17a3d8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+}
+
+.portfolio {
+  background-color: #2e3e4e;
+}
+
+.portfolio .wrapper {
+  max-width: 100%;
+  width: 77%;
+  padding: 50px 2% 50px 7.3%;
+}
+
+.portfolio_list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 35px;
+  list-style: none;
+  padding: 70px 0%;
+}
+
+.portfolio_card1 {
+  border: 13px solid white;
+  background-color: grey;
+  width: 322px;
+  height: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* portfolio icon */
+
+.camera {
+  display: block;
+}
+
+/* portfolio icon */
+.camera::before {
+  content: "\f030";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+}
+
+.camera span {
+  display: none;
+}
+
+/* details icon */
+
+.camera {
+  display: flex;
+  /* Visible by default */
+  justify-content: center;
+  align-items: center;
+}
+
+.camera::before {
+  content: "\f030";
+  /* Font Awesome Camera Icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.eye-wrapper {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye::before {
+  content: "\f06e";
+  /* Font Awesome Eye Icon */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: white;
+  margin-right: 10px;
+}
+
+.details-text {
+  font-size: 1.3rem;
+  /* Adjust text size */
+  color: white;
+  font-weight: 600;
+}
+
+.portfolio_card1:hover .camera {
+  display: none;
+  /* Hide the camera on hover */
+}
+
+.portfolio_card1:hover .eye-wrapper {
+  display: flex;
+  /* Show the eye icon and text on hover */
+  transition: all 0.3s ease;
+  /* Smooth transition */
+}
+
+.portfolio_cap1 {
+  color: #f5945c;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.portfolio_cap2 {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.our-services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* service icons */
+.service-description .desktop::before {
+  content: "\f390";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.desktop span {
+  display: none;
+}
+
+.service-description .search_desc::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.search_desc span {
+  display: none;
+}
+
+.service-description .cart::before {
+  content: "\f07a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.cart span {
+  display: none;
+}
+
+.service-description .like::before {
+  content: "\f164";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: #1697ca;
+  padding: 50px;
+  border-radius: 50%;
+  font-size: 5rem;
+  color: white;
+}
+
+.like span {
+  display: none;
+}
+
+/* service icon end */
+
+.whatweoffer .wrapper {
+  text-align: center;
+  max-width: 100%;
+  width: 77%;
+  padding: 50px 4% 50px 4%;
+}
+
+.whatweoffer_list {
+  display: flex;
+  text-align: left;
+  column-gap: 50px;
+}
+
+.whatweoffer_list p {
+  font-size: 1rem;
+}
+
+.whatweoffer_heading {
+  color: #1697ca;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.whatweoffer_heading3 {
+  padding-bottom: 40px;
+  font-weight: 400;
+}
+
+.whatweoffer_heading4 {
+  color: #1697ca;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+
+.whatweoffer_element {
+  margin-top: 10px;
+  margin-left: 160px;
+}
+
+.more_works2 {
+  padding: 5px;
+  background-color: #17a3d8;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  border-bottom: 3px solid #2e3e4e;
+}
+
+.more_works3 {
+  color: #1697ca;
+}
+
+.greyline {
+  display: block;
+  width: 100%;
+
+  height: 1px;
+
+  background-color: gray;
+  color: transparent;
+}
+
+.testimonials .wrapper {
+  text-align: center;
+  max-width: 100%;
+  width: 77%;
+  padding: 50px 4% 50px 4%;
+}
+
+.testimonials_heading {
+  color: #1697ca;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.testimonials_element {
+  color: #2e3e4e;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.testimonials_heading4 {
+  color: #f5945c;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* testimonial icon */
+i {
+  font-weight: 900;
+  font-size: 4rem;
+  background-color: grey;
+  border-radius: 50%;
+  padding: 10px 19%;
+}
+
+.testimonial_list {
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial_list li {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+/* Icon styles */
+.testimonial_list li i {
+  font-weight: 900;
+  font-size: 4rem;
+  background-color: grey;
+  border-radius: 50%;
+  padding: 10px 40%;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.testimonial_list li::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 90%;
+  transform: translateX(-50%);
+  width: 115%;
+  height: 8px;
+  background-color: grey;
+  transition: background-color 0.3s ease;
+}
+
+.testimonial_list li::before {
+  content: "";
+  position: absolute;
+  bottom: -42px;
+  left: 90%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #f58561;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.testimonial_list li:hover::before {
+  opacity: 1;
+}
+
+.testimonial_list li:hover i {
+  background-color: #f58561;
+  color: white;
+}
+
+.testimonial_list li:hover::after {
+  background-color: #f58561;
+}
+
+/* footer section starts */
+footer {
+  background-color: #2e3e4e;
+}
+
+footer .wrapper {
+  padding: 50px 5% 50px 5%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 77%;
+  column-gap: 20px;
+}
+
+.footer_headings {
+  padding-bottom: 20px;
+  color: #f5945c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.birdfeed {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.birdfeed_list p {
+  color: white;
+  font-weight: 300;
+}
+
+/* white line between list */
+.birdfeed_list li:nth-child(1),
+.birdfeed_list li:nth-child(2) {
+  border-bottom: 1px solid white;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+}
+
+footer .wrapper a:visited {
+  color: #1697ca;
+  padding-bottom: 5px;
+}
+
+.birdfeed_list p:nth-of-type(1) {
+  padding-bottom: 5px;
+}
+
+.birdfeed_list p:nth-of-type(2) {
+  padding-top: 5px;
+}
+
+.birdfeed_list li:nth-child(2) p:first-of-type,
+.birdfeed_list li:nth-child(3) p:first-of-type {
+  padding-top: 20px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  margin-left: -65px;
+}
+
+.newsletter p {
+  color: white;
+  font-weight: 300;
+}
+
+.newsletter_desc {
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  margin-bottom: 5px;
+}
+
+.newsletter .email-heading {
+  color: #1697ca;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.newsletter .email {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  background-color: #1697ca;
+  border: none;
+  align-self: flex-end;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.recentprojects {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.recentprojects_element {
+  display: flex;
+  column-gap: 20px;
+}
+
+.recentprojects_element2 {
+  color: white;
+  font-weight: 300;
+}
+
+.recentprojects_element2 p {
+  margin-bottom: 5px;
+}
+
+.recentprojects_element2 a {
+  margin-bottom: 5px;
+}
+.recentprojects_element img {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+}
+
+.recentprojects_list li {
+  padding-bottom: 20px;
+}
+
+.recentprojects_list li:nth-child(1),
+.recentprojects_list li:nth-child(2) {
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.contact {
+  width: 15%;
+}
+.contact_list {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 300;
+}
+
+.phone_element1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.mobile_element {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.email_element {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.email_element2 {
+  margin-left: 20px;
+}
+
+/* contact icons */
+.phone::before {
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #1697ca;
+  font-size: 3rem;
+}
+
+.phone span {
+  display: none;
+}
+
+.mobile::before {
+  content: "\f3ce";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #1697ca;
+  font-size: 3rem;
+}
+
+.message::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #1697ca;
+  font-size: 3rem;
+}
+
+.message span {
+  display: none;
+}
+
+.mobile span {
+  display: none;
+}
