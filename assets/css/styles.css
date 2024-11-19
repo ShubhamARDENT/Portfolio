@@ -834,13 +834,19 @@ footer .wrapper a:visited {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 25%;
+  width: 27%;
   margin-left: -65px;
 }
 
 .newsletter p {
   color: white;
   font-weight: 300;
+}
+
+.newsletter p:nth-of-type(2) {
+  color: #1697ca;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .newsletter_desc {
